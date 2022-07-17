@@ -35,7 +35,7 @@ function InputSelect({ label, placeholder, options }) {
       <label className="capitalize"> {label}</label>
       <select
         placeholder="schools "
-        className={classnames('border', commonInputStyles)}
+        className={classnames('border capitalize', commonInputStyles)}
       >
         <option>{placeholder}</option>
         {options.map((option, index) => (
@@ -71,7 +71,7 @@ function Status() {
 function Date() {
   return (
     <div className="flex justify-between">
-      <label>Status</label>
+      <label>Date</label>
       <input type="date" className={commonInputStyles} />
     </div>
   )

@@ -47,7 +47,7 @@ function InputSelect({ placeholder, options }) {
   return (
     <select
       placeholder="schools "
-      className={classnames('border', commonInputStyles)}
+      className={classnames('border capitalize', commonInputStyles)}
     >
       <option>{placeholder}</option>
       {options.map((option, index) => (
