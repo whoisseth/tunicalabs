@@ -54,12 +54,14 @@ function Status() {
       <label>Status</label>
       <div className="flex gap-6 justify-start -ml-1 ">
         <div>
-          <input type="radio" name="status" id="status" />
-          <label className="ml-3 ">Active</label>
+          <input type="radio" name="status" id="active" value="active" />
+          <label for="active" className="ml-3 ">
+            Active
+          </label>
         </div>
-        <div>
-          <input type="radio" name="status" id="status" />
-          <label id="status" className="ml-3  ">
+        <div className="cursor-pointer">
+          <input value="inactive" type="radio" name="status" id="inactive" />
+          <label for="inactive" id="status" className="ml-3  ">
             Inactive
           </label>
         </div>

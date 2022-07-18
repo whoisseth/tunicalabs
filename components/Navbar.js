@@ -5,7 +5,7 @@ import userImg from '../public/images/random-user.png'
 
 export default function Navbar() {
   return (
-    <div className="bg-red-800 text-white flex items-center justify-between px-8 py-6 sticky top-0  h-16 ">
+    <div className="bg-brand text-white flex items-center justify-between px-8 py-6 sticky top-0  h-16 ">
       <h2 className="text-lg">TUNICALABS MEDIA</h2>
       <div className="flex items-center gap-10 ">
         <div className="relative ">

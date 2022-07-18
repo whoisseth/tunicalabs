@@ -10,7 +10,11 @@ export let useStore = create(
       setViewStudent: () => set({ viewStudent: true }),
     }),
     { name: 'viewStudentState' },
-
-    //
   ),
 )
+
+// (set) => ({
+//   studentData: [{ name: '' }],
+//   setStudentData: () => set({ viewStudent: false }),
+// }),
+// { name: 'studentData' },

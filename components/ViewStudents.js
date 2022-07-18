@@ -2,8 +2,8 @@ import classnames from 'classnames'
 import { HiDownload } from 'react-icons/hi'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import { selectData } from './data'
-import {} from './data'
 const commonInputStyles = 'w-32 bg-gray-200 rounded outline-none py-1'
+const tableStyle = '-ml-6 grid place-items-center grid-cols-7 gap-4 align-center  '
 
 export default function ViewStudents({ hidden }) {
   return (
@@ -62,7 +62,9 @@ function InputSelect({ placeholder, options }) {
 function Table() {
   return (
     <div className="rounded overflow-hidden mb-4 ">
-      <header className="flex gap-24 px-4 bg-brand text-white  py-3">
+      <header
+        className={classnames(' px-4 bg-brand text-white  py-3', tableStyle)}
+      >
         <div>ID</div>
         <div>Name</div>
         <div>School</div>
@@ -81,7 +83,7 @@ function Table() {
 }
 function DataRow() {
   return (
-    <div className="flex gap-24 px-4    py-3">
+    <div className={classnames(' gap-10 px-4  py-3', tableStyle)}>
       <div>1</div>
       <div>Utkarsh</div>
       <div>U.P School</div>
